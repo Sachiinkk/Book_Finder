@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth transitions for theme + hover states */
+* {
+  @apply transition-colors duration-200;
+}
+
+body {
+  @apply text-neutral-900 dark:text-neutral-100;
+}
+
+/* Simple scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4d4d8;
+  border-radius: 8px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #404040;
+}
